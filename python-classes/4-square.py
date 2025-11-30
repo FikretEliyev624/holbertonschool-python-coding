@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-3-square module
+4-square module
 
 """
 
@@ -29,3 +29,11 @@ class Square:
     def area(self):
         """Return the current square area"""
         return self.__size**2
+
+    def my_print(self):
+        """that prints in stdout the square with the character"""
+        if self.__size == 0:
+            print()
+            return
+        for _ in range(self.__size):
+            print("#" * self.__size)
